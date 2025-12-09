@@ -70,70 +70,118 @@ An E-Commerce website built with React and Spring Boot featuring secure authenti
 E-Commerce-Website-with-Admin-Dashboard-
 │
 ├── backend
-│ ├── src/main/java/com/onlineshopping
-│ ├── src/main/resources
-│ └── pom.xml
+│   ├── src/main/java/com/onlineshopping
+│   ├── src/main/resources
+│   └── pom.xml
 │
 └── client (React Frontend)
-├── src
-├── public
-└── package.json
+    ├── src
+    ├── public
+    └── package.json
+
+
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### Prerequisites
-- Java 17+
-- Maven 3.6+
-- MySQL 8+
+### ✅ Prerequisites
+- Java **17+**
+- Maven **3.6+**
+- MySQL **8+**
 - Node.js + npm
 
 ---
 
 ## 📦 Backend Setup (Spring Boot)
 
-1. Open the `backend` folder in IntelliJ/STS.
-2. Update MySQL credentials in:
+1. Open the **backend** folder in IntelliJ IDEA or Spring Tool Suite.
 
-src/main/resources/application.properties
+2. Update MySQL credentials inside:
+
+
+
+backend/src/main/resources/application.properties
+
 
 Example:
+
+
+
 spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
 spring.datasource.username=root
 spring.datasource.password=yourPassword
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
 
 3. Run backend:
 
-```bash
+
 mvn spring-boot:run
+
+
 Backend runs at:
+
 👉 http://localhost:8080
 
-💻 Frontend Setup (React + Vite)
+---
+
+## 💻 Frontend Setup (React + Vite)
+
 Open the client folder in VS Code.
 
 Install dependencies:
-
 npm install
+
+
+Start the frontend:
 npm run dev
+
 
 Frontend runs at:
 👉 http://localhost:5173
 
-▶️ Usage
-Visit http://localhost:5173
+---
 
-Login as admin to use the dashboard
-Normal users can browse products, add to cart, place orders
-Admin can manage users, products, orders
+## ▶️ Usage
 
-📌 Future Enhancements
-Payment Gateway
-Advanced Sales Analytics
-Email Notifications
-Product Reviews & Ratings
-Delivery Management module
+Open http://localhost:5173
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome.
+Login as Admin to access the dashboard
+
+Normal users can:
+
+- Browse products
+
+- Add to cart
+
+- Place orders
+
+- Admin can:
+
+- Manage products
+
+- Manage users
+
+- Manage orders
+
+---
+
+## 📌 Future Enhancements
+
+- Online Payment Gateway
+
+- Advanced Sales Analytics
+
+- Automated Email Notifications
+
+- Product Reviews & Ratings
+
+- Delivery Management Module
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and issues are always welcome!
