@@ -108,11 +108,11 @@ Example:
 
 
 
-spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
-spring.datasource.username=root
-spring.datasource.password=yourPassword
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+- spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+- spring.datasource.username=root 
+- spring.datasource.password=yourPassword
+- spring.jpa.hibernate.ddl-auto=update
+- spring.jpa.show-sql=true
 
 
 3. Run backend:
